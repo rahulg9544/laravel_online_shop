@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Validator;
 
 
 
-class CustomerController extends Controller
+class ShopsController extends Controller
 {
     public function index() {
 
     
         $products = Product::latest()->paginate(10);
 
-        return view('admin.custdashboard', compact('products'));
+        return view('admin.shopdashboard', compact('products'));
 
 
     }

@@ -32,6 +32,10 @@ class AdminLoginController extends Controller
                 else if($admin->role == 3 ) {
                     return redirect()->route('admin.custdashboard');
                 }
+
+                else if($admin->role == 1 ) {
+                    return redirect()->route('admin.shopdashboard');
+                }
                 
                 else {
 

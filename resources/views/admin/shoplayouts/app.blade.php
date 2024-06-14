@@ -63,7 +63,7 @@
 			<!-- /.navbar -->
 			<!-- Main Sidebar Container -->
 			
-            @include('admin.custlayouts.sidebar')
+            @include('admin.shoplayouts.sidebar')
 			<!-- Content Wrapper. Contains page content -->
 			<div class="content-wrapper">
 

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\HomeController;
 use App\Http\Controllers\admin\ShopController;
+use App\Http\Controllers\admin\ShopsController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\CustomerController;
 use App\Http\Controllers\admin\AdminLoginController;
@@ -49,7 +50,9 @@ Route::group(['prefix' => 'admin'], function() {
 
     Route::group(['middleware' => 'admin.auth'], function() {
 
-        Route::get('/dashboard', [HomeController::class,'index'])->name('admin.custdashboard');
+        Route::get('/shop_dashboard', [ShopsController::class,'index'])->name('admin.shopdashboard');
+
+        Route::get('/dashboards', [CustomerController::class,'index'])->name('admin.custdashboard');
 
         Route::get('/dashboard', [HomeController::class,'index'])->name('admin.dashboard');
 

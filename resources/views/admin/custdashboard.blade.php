@@ -21,44 +21,30 @@
 					<!-- Default box -->
 					<div class="container-fluid">
 						<div class="row">
+
+						@if($products->isNotEmpty())
+
+                                        @foreach($products as $product)
 							<div class="col-lg-4 col-6">							
 								<div class="small-box card">
 									<div class="inner">
-										<h3>150</h3>
-										<p>Total Orders</p>
+										<h3>{{ $product->quantity }}</h3>
+										<p>{{ $product->product_name }}</p>
 									</div>
 									<div class="icon">
 										<i class="ion ion-bag"></i>
 									</div>
-									<a href="#" class="small-box-footer text-dark">More info <i class="fas fa-arrow-circle-right"></i></a>
+									<a href="#" class="small-box-footer text-dark">Add to cart<i class="fas fa-arrow-circle-right"></i></a>
 								</div>
+
+								@endforeach
+
+@else
+
+@endif
+
 							</div>
 							
-							<div class="col-lg-4 col-6">							
-								<div class="small-box card">
-									<div class="inner">
-										<h3>50</h3>
-										<p>Total Customers</p>
-									</div>
-									<div class="icon">
-										<i class="ion ion-stats-bars"></i>
-									</div>
-									<a href="#" class="small-box-footer text-dark">More info <i class="fas fa-arrow-circle-right"></i></a>
-								</div>
-							</div>
-							
-							<div class="col-lg-4 col-6">							
-								<div class="small-box card">
-									<div class="inner">
-										<h3>$1000</h3>
-										<p>Total Sale</p>
-									</div>
-									<div class="icon">
-										<i class="ion ion-person-add"></i>
-									</div>
-									<a href="javascript:void(0);" class="small-box-footer">&nbsp;</a>
-								</div>
-							</div>
 						</div>
 					</div>					
 					<!-- /.card -->
