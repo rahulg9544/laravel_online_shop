@@ -1,3 +1,21 @@
+Main Admin Login Credentials:
+
+    Email: admin@example.com
+    Password: admin
+
+
+Shop Login 
+
+rohan@example.com
+admin
+
+
+Customer Login
+customer@example.com
+admin <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
 Create three types of user roles <br>
 
     Admin: Functionalities.
@@ -20,21 +38,4 @@ Create three types of user roles <br>
 
 
 
-Main Admin Login Credentials:
 
-    Email: admin@example.com
-    Password: admin
-
-
-
-Shop Login 
-
-rohan@example.com
-admin
-
-
-
-Customer Login
-
-customer@example.com
-admin
